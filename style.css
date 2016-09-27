@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 20px auto;
+    min-width: 500px;
+    width: 500px;
+    height: 540px;
+    border: 12px solid #e6e600;
+    border-radius: 5px;
+}
+
+.header {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    color: #1a1aff;
+    text-align: center;
+    margin: 0 auto;
+    height: 100px;
+    line-height: 100px;
+}
+
+.header #welcome {
+    animation: flash 2s forwards infinite;
+}
+
+.header #fail {
+    font-size: 25px;
+    color: #fff;
+}
+
+.header .win {
+    margin: 15px auto;
+    height: 74px;
+    width: 64px;
+}
+
+.header .coffee {
+    background: url(http://gdurl.com/Ad0b) no-repeat;
+    animation: celebrate 3s forwards 1;
+}
+
+.header .tea {
+    background: url(http://gdurl.com/Ad0b);
+    background-position-y: 74px;
+    animation: celebrate 3s forwards 1;
+}
+
+.header .espresso {
+    background: url(http://gdurl.com/Ad0b);
+    background-position-y: 148px;
+    animation: celebrate 3s forwards 1;
+}
+
+@keyframes flash {
+    from {
+        font-size: 16px;
+    }
+    to {
+        font-size: 25px;
+        color: #ff1aff;
+    }
+}
+
+@keyframes celebrate {
+    from {
+        transfrom: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(3600deg);
+    }
+}
+
+.content {
+    position: relative;
+}
+
+.content .reel {
+    float: left;
+    height: 384px;
+    width: 128px;
+    margin: 0 11px;
+}
+
+.content .priceLine {
+    background-color: #ff3385;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 184px;
+}
+
+.footer {
+    margin: 10px auto;
+    width: 450px;
+    min-width: 450px;
+    height: 300px;
+}
+
+.footer .reel {
+    float: left;
+    height: 212px;
+    width: 64px;
+    margin: 0 11px;
+}
+
+#reel1 {
+    margin-left: 19px;
+    background: url(http://gdurl.com/YEij);
+}
+
+#reel2 {
+    background: url(http://gdurl.com/u8g8);
+}
+
+#reel3 {
+    background: url(http://gdurl.com/66xv);
+}
+
+#reel1_s {
+    margin-left: 19px;
+    background: url(http://gdurl.com/uo6l);
+}
+
+#reel2_s {
+    background: url(http://gdurl.com/dpd5);
+}
+
+#reel3_s {
+    background: url(http://gdurl.com/hTo8);
+}
+
+#arrow {
+    background: url(http://gdurl.com/tigO);
+}
+
+#price {
+    background: url(http://gdurl.com/Ad0b);
+}
+
+.btn {
+    margin: 0 auto;
+    border-radius: 50px;
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    -webkit-box-shadow: inset 0px 0px 23px 5px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: inset 0px 0px 23px 5px rgba(0, 0, 0, 0.23);
+    box-shadow: inset 0px 0px 23px 5px rgba(0, 0, 0, 0.23);
+    cursor: pointer;
+}
+
+.btn:hover {
+    -webkit-box-shadow: inset 0px 0px 29px 27px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: inset 0px 0px 29px 27px rgba(0, 0, 0, 0.23);
+    box-shadow: inset 0px 0px 29px 27px rgba(0, 0, 0, 0.23);
+}
+
+.btn:active {
+    background: #ccc;
+}
+
+.disabled {
+    color: #bfbfbf;
+}

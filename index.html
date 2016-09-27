@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Slot Machine game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header flashing">
+            <span id="welcome">Welcome to play! Get your beverage by Luck!</span>
+            <span id="fail" style="display:none;">Best Luck Next Time!</span>
+            <div id="win" class="win" style="display:none;"></div>
+        </div>
+        <div class="content">
+            <div class="reel" id="reel1">
+            </div>
+            <div class="reel" id="reel2">
+            </div>
+            <div class="reel" id="reel3">
+            </div>
+            <div class="priceLine"></div>
+        </div>
+    </div>
+    <div class="btn" id="bet">
+        BET
+    </div>
+    <div class="footer">
+        <div class="reel" id="reel1_s">
+        </div>
+        <div class="reel" id="reel2_s">
+        </div>
+        <div class="reel" id="reel3_s">
+        </div>
+        <div class="reel" id="arrow">
+        </div>
+        <div class="reel" id="price">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
